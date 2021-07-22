@@ -1,0 +1,15 @@
+ML-Algos hyperparameters:
+
+	SVM - C=10, gamma=10 for PCA on flattened layer + C=10, gamma = 0.0001 for fully connected layer found based on multiple gridsearches
+	Decision Tree - all parameters are as per scikitlearn defaults
+	Random Forest - multiple forest sizes are tried out in combination with crossentropy and gini for classification and the best turned out to be 100 with gini entropy
+	PCA - correct reshape size is taken in accordance with 90-95% variance cumulative sum
+	XGBOOST- binary logistic objective function with 100 estimators; loss->logloss
+	MLP- maximum 3000 iterations with early stopping if loss didn't improve
+PCA # of components:
+	CNN1 - 3500
+	CNN2 - 4000
+	CNN3 - 3500
+	VGG16 - 6000
+	Alexnet - 4500
+	
